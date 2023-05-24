@@ -10,12 +10,13 @@ Using a "Bearer Token" to re-authenticate with a server following a successful l
 
 ### Links and Resources
 
-- [GitHub Actions ci/cd]()
+- [GitHub Actions ci/cd](https://github.com/CodingKao/bearer-auth/pulls)
 
 - [back-end prod server url](https://bearer-auth-hxkt.onrender.com/)
 
 ### Collaborators
 
+- Start code from Ryan Gallaway, Code Fellows Instructor
 - Kenya Womack
 - Hayden Cooper
 - Coriana Williams
@@ -40,4 +41,4 @@ To run tests, after running `npm i`, run the command `npm test`
 
 #### Lab 7 UML
 
-![Lab 7 UML image]()
+![Lab 7 UML image](./assets/bearerUML.png)
