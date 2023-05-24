@@ -12,7 +12,7 @@ Using a "Bearer Token" to re-authenticate with a server following a successful l
 
 - [GitHub Actions ci/cd]()
 
-- [back-end prod server url]()
+- [back-end prod server url](https://bearer-auth-hxkt.onrender.com/)
 
 ### Collaborators
 
@@ -40,4 +40,4 @@ To run tests, after running `npm i`, run the command `npm test`
 
 #### Lab 7 UML
 
-![Lab 6 UML image]()
+![Lab 7 UML image]()
