@@ -2,7 +2,7 @@
   "development": {
     "username": "kao",
     "password": null,
-    "database": "database_development",
+    "database": "bearer-auth-d53",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
