@@ -1,7 +1,7 @@
 'use strict';
 
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken'); // add this require to remedy jwt linter errors
+const jwt = require('jsonwebtoken'); 
 const SECRET = process.env.SECRET;
 
 const userSchema = (sequelize, DataTypes) => {
