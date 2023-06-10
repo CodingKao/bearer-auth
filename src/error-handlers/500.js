@@ -1,10 +1,21 @@
 'use strict';
 
-module.exports = (err, req, res, next) => {
-  let error = { error: err.message || err };
-  res.statusCode = err.status || 500;
-  res.statusMessage = err.statusMessage || 'Server Error';
-  res.setHeader('Content-Type', 'application/json');
-  res.write(JSON.stringify(error));
-  res.end();
+const base64 = require('base-64');
+const { users } = require('../auth/models/index');
+
+module.exports = async (req, res, next) => {
+
+  if (!req.headers.authorization) { next('no auth headers present'); }
+
+  let basic = req.headers.authorization.split(' ').pop();
+  let [username, password] = base64.decode(basic).split(':');
+
+  try {
+    req.user = await users.authenticateBasic(username, password);
+    next();
+  } catch (e) {
+    console.error(e);
+    res.status(403).send('Invalid Login');
+  }
+
 };
